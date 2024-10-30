@@ -1,1 +1,1 @@
-# ground-state-with-Monte-Carlo
+# groundstate-with-Monte-Carlo
