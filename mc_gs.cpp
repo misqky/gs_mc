@@ -46,6 +46,7 @@ int main()
 {
     vector<pair<double, double>> k_vector(site_number / 2);
     pair<double, double> k;
+    double H_field = 0.11;
     double epsln;
     Matrix2d A_up, A_down;
     Vector4d eigenvalue_vec;
@@ -58,7 +59,7 @@ int main()
     vector<tuple<double, pair<double, double>, int>> eigen_updata;
     vector<tuple<double, pair<double, double>, int>> eigen_downdata;
 
-    Unitary_map = all_eigendata(eigen_updata, eigen_downdata);
+    Unitary_map = all_eigendata(eigen_updata, eigen_downdata, H_field);
 
 for(int it = 0; it < iterations; ++it)
     {

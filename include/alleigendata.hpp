@@ -19,10 +19,11 @@ using namespace Eigen;
 extern  map<pair<double, double>, pair<Matrix2d, Matrix2d>> all_eigendata
 (
     vector<tuple<double, pair<double, double>, int>>& eigen_updata,
-    vector<tuple<double, pair<double, double>, int>>& eigen_downdata
+    vector<tuple<double, pair<double, double>, int>>& eigen_downdata,
+    double H_field
 )
 {
-    double H_field = 0.11;
+
     vector<pair<double, double>> k_vector(site_number / 2);
     pair<double, double> k;
     double epsln;
